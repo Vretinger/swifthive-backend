@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import CustomUser, FreelancerProfile
 
-# Register your models here.
+admin.site.register(CustomUser)
+admin.site.register(FreelancerProfile)
