@@ -1,10 +1,7 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import MessageViewSet
-
-router = DefaultRouter()
-router.register(r'messages', MessageViewSet)
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('user_messages/', views.UserMessageList.as_view(), name='user-message-list'),
+    path('user_messages/<int:pk>/', views.UserMessageDetail.as_view(), name='user-message-detail'),
 ]

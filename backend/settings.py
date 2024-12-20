@@ -41,7 +41,12 @@ SECRET_KEY = 'django-insecure-#_-)!*+h8*ov@#w^i=3ce*2@fnkc_*(erjys5z$!68p56%2vyz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-vretinger-swifthiveback-7ufmrwla884.ws.codeinstitute-ide.net']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-vretinger-swifthiveback-7ufmrwla884.ws.codeinstitute-ide.net'
+]
+
 
 
 # Application definition
@@ -53,6 +58,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'rest_framework',
     'rest_framework_simplejwt',
     'cloudinary',

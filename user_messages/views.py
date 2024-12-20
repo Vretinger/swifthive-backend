@@ -1,7 +1,12 @@
-from rest_framework import viewsets
-from .models import Message
-from .serializers import MessageSerializer
+from django.views.generic import ListView, DetailView
+from .models import UserMessage
 
-class MessageViewSet(viewsets.ModelViewSet):
-    queryset = Message.objects.all()
-    serializer_class = MessageSerializer
+class UserMessageList(ListView):
+    model = UserMessage
+    template_name = 'user_messages/user_message_list.html'
+    context_object_name = 'user_messages'
+
+class UserMessageDetail(DetailView):
+    model = UserMessage
+    template_name = 'user_messages/user_message_detail.html'
+    context_object_name = 'user_message'

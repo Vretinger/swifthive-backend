@@ -1,16 +1,7 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import CustomUserViewSet, FreelancerProfileViewSet
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.urls import path
+from . import views
 
-# Create a router for the viewsets
-router = DefaultRouter()
-router.register(r'users', CustomUserViewSet)
-router.register(r'freelancer-profiles', FreelancerProfileViewSet)
-
-# Define the urlpatterns
 urlpatterns = [
-    path('', include(router.urls)),  # Includes the viewsets from the router
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('users/', views.UserList.as_view(), name='user-list'),
+    path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
 ]
