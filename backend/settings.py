@@ -86,7 +86,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    'swifthive-backend.herokuapp.com',
+    'swifthive-api-bad383c6f380.herokuapp.com',
     'localhost',
 ]
 
