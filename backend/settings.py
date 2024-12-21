@@ -28,6 +28,9 @@ CLOUDINARY_STORAGE = {
 # Set the default file storage to Cloudinary's storage
 DEFAULT_FILE_STORAGE = 'cloudinary.storage.MediaCloudinaryStorage'
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
