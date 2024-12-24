@@ -101,7 +101,8 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-vretinger-swifthiveback-7ufmrwla884.ws.codeinstitute-ide.net'
+    'https://8000-vretinger-swifthiveback-7ufmrwla884.ws.codeinstitute-ide.net',
+    'https://8080-vretinger-swifthivefron-o8zyytrh9z7.ws.codeinstitute-ide.net'
 ]
 
 MIDDLEWARE = [
