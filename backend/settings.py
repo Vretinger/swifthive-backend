@@ -60,7 +60,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'  # Disable email verification
 
 # CORS configuration
 CORS_ALLOWED_ORIGINS = [
-    'https://8080-vretinger-swifthivefron-o8zyytrh9z7.ws.codeinstitute-ide.net/',  
+    'https://8080-vretinger-swifthivefron-o8zyytrh9z7.ws.codeinstitute-ide.net',  
 ]
 CORS_ALLOW_CREDENTIALS = True
 
