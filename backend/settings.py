@@ -134,6 +134,8 @@ REST_FRAMEWORK = {
     ),
 }
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
