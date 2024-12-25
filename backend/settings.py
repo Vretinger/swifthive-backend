@@ -106,6 +106,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-vretinger-swifthiveback-7ufmrwla884.ws.codeinstitute-ide.net',
     'https://8080-vretinger-swifthivefron-o8zyytrh9z7.ws.codeinstitute-ide.net',
     "https://swifthive-api-bad383c6f380.herokuapp.com",
+    "https://swifthive-8bbba3ed51bd.herokuapp.com", 
 ]
 
 # Allow cookies to be sent with cross-origin requests
