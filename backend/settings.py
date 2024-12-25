@@ -62,6 +62,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'  # Disable email verification
 CORS_ALLOWED_ORIGINS = [
     'https://8080-vretinger-swifthivefron-o8zyytrh9z7.ws.codeinstitute-ide.net',
     "https://swifthive-api-bad383c6f380.herokuapp.com",  
+    "https://swifthive-8bbba3ed51bd.herokuapp.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
